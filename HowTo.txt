@@ -1,0 +1,24 @@
+HashAcademy
+-----------
+
+Solidity Contract:
+pragma solidity ^0.5.0;
+
+contract HashAcademy{
+    string public name;
+    uint public level;
+    
+    function setcertificate(string memory _name, uint _level) public {
+        name = _name;
+        level = _level;
+    }
+    
+    function getcertificate() public view returns (string memory, uint) {
+        return(name, level);
+    }
+}
+
+Install Ganache for Windows for Web3 Provider
+https://github.com/trufflesuite/ganache/releases
+
+Install YARN in NODE : npm i yarn
